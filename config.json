@@ -13,7 +13,7 @@
                "enabled": "1"
            },
            "Tantifilm":{
-               "domain": "bond",
+               "domain": "be",
                "TF_ForwardProxy": "0",
                "TF_PROXY": "0",
                "enabled": "1"
@@ -29,8 +29,8 @@
               "domain":"org",
               "enabled":"1"
           },
-          "CB01":{
-              "domain":"sbs",
+          "cineblog01":{
+              "domain":"diy",
               "CB_PROXY":"0",
               "CB_ForwardProxy":"0",
               "MX_ForwardProxy":"0",
