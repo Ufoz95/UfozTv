@@ -141,8 +141,8 @@ async def search_movie(showname,date,client):
     try:
         showname = showname.replace(" ","+").replace("ò","o").replace("è","e").replace("à","a").replace("ù","u").replace("ì","i")  
         headers = fake_headers.generate()
-        headers['Referer'] = f'https://cineblo01.{CB_DOMAIN}/'
-        query = f'https://cineblog01.{CB_DOMAIN}/?s={showname}'
+        headers['Referer'] = f'https://cb01new.{CB_DOMAIN}/'
+        query = f'https://cb01new.{CB_DOMAIN}/?s={showname}'
         response = await client.get(ForwardProxy + query,headers=headers, impersonate = "chrome124", proxies = proxies)
         if response.status_code != 200:
             print(f"CB01 Failed to fetch search results: {response.status_code}")
@@ -170,8 +170,8 @@ async def search_series(showname,date,client):
     try:
         showname = showname.replace(" ","+")
         headers = fake_headers.generate()
-        headers['Referer'] = f'https://cineblog01.{CB_DOMAIN}/serietv/'
-        query = f'https://cineblo01.{CB_DOMAIN}/serietv/?s={showname}'
+        headers['Referer'] = f'https://cb01new.{CB_DOMAIN}/serietv/'
+        query = f'https://cb01new.{CB_DOMAIN}/serietv/?s={showname}'
         response = await client.get(ForwardProxy + query,headers=headers,impersonate = "chrome124", proxies = proxies)
         if response.status_code != 200:
             print(f"CB01 Failed to fetch search results: {response.status_code}")
