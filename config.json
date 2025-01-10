@@ -29,7 +29,7 @@
               "domain":"org",
               "enabled":"1"
           },
-          "cineblog01":{
+          "CB01":{
               "domain":"diy",
               "CB_PROXY":"0",
               "CB_ForwardProxy":"0",
